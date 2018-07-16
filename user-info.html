@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="zh" dir="ltr">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	<title>个人信息</title>
+
+	<link href="https://cdn.bootcss.com/normalize/8.0.0/normalize.min.css" rel="stylesheet">
+	<link href="https://cdn.bootcss.com/Swiper/4.3.0/css/swiper.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="./css/reset.css">
+	<link rel="stylesheet" href="./css/border.css">
+	<link rel="stylesheet" href="./css/style.css">
+	<link rel="stylesheet" media="(max-width:1024px)" href="./css/mediaqueries.css">
+	<link rel="stylesheet" href="./css/jquery.cxcalendar.css">
+
+	<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdn.bootcss.com/Swiper/4.2.6/js/swiper.min.js"></script>
+	<script src="https://cdn.bootcss.com/jquery_lazyload/1.9.7/jquery.lazyload.min.js"></script>
+	<script src="./js/jquery.cxcalendar.min.js"></script>
+	<script src="./js/main.js" charset="utf-8"></script>
+	<script src="./js/validator.min.js"></script>
+	<script src="./js/main.js"></script>
+	<style media="screen">
+		#pop {
+			position: fixed;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			margin: auto;
+			background-color: rgba(0, 0, 0, 0.5);
+			z-index: 999;
+			display: none;
+		}
+		#close{
+			position: absolute;
+			right: 0px;
+			top: 0px;
+			width: 40px;
+			height: 40px;
+			line-height: 40px;
+			overflow: hidden;
+			text-align: center;
+			font-size: 40px;
+			font-weight: lighter;
+		}
+		#close:hover{
+			color: #0AAB9B
+		}
+		#pop form {
+			width: 400px;
+			height: 400px;
+			background-color: #FFFFFF;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			display: flex;
+			flex-wrap: wrap;
+			align-content: space-between;
+			padding: 40px;
+			border-radius: 5px;
+			overflow: hidden;
+		}
+
+		#pop h3 {
+			display: block;
+			text-align: center;
+			width: 100%;
+			height: 30px;
+			line-height: 30px;
+			font-weight: normal;
+			font-size: 16px;
+		}
+
+		#pop input {
+			width: 100%;
+			height: 40px;
+			border: 1px solid #CCCCCC;
+			text-indent: 1em;
+		}
+
+		#pop button {
+			height: 40px;
+			width: 120px;
+			background-color: #0AAB9B;
+			color: #FFFFFF;
+		}
+
+		#pop button:hover {
+			background-color: #009484;
+		}
+		@media (max-width:960px) {
+			#pop form {
+				width: 90%;
+				padding: 10%;
+			}
+		}
+	</style>
+</head>
+
+<body>
+	<!-- top-bar -->
+	<div class="top-bar">
+		<div class="top-bar-inner">
+			<div class="top-bar-left">
+				<p class="top-bar-title">KaKaoTalk ID:Mif99</p>
+			</div>
+			<div class="top-bar-right">
+				<a class="top-bar-link" href="">留言板</a>
+				<a class="top-bar-link" href="">个人中心</a>
+				<a class="top-bar-link" href="">LOGIN</a>
+				<a class="top-bar-link" href="">JQIN</a>
+			</div>
+
+		</div>
+	</div>
+	<!-- top-bar end -->
+	<!-- header -->
+	<header>
+		<div class="header-inner">
+
+			<div class="header-logo-wrap">
+				<img class="header-logo" src="./images/logo.png" alt="logo">
+				<!-- menu button-->
+				<div class="header-menu">
+					<span class="header-menu-line"></span>
+				</div>
+				<!-- menu button end -->
+			</div>
+			<!-- nav -->
+			<div class="header-nav-wrap">
+				<ul class="header-nav">
+					<li class="header-nav-item"><a class="header-nav-link active" href="#">首页</a> </li>
+					<li class="header-nav-item"><a class="header-nav-link" href="#">产品介绍</a> </li>
+					<li class="header-nav-item"><a class="header-nav-link" href="#">妊娠周期</a> </li>
+					<li class="header-nav-item"><a class="header-nav-link" href="#">快递方式</a> </li>
+					<li class="header-nav-item"><a class="header-nav-link" href="#">联系我们</a> </li>
+				</ul>
+			</div>
+			<!-- nav end -->
+		</div>
+	</header>
+	<!-- header end -->
+	<!-- main -->
+	<main>
+		<div class="main-inner">
+			<div class="banner-wrap">
+				<div class="bnnner-inner">
+					<h1 class="banner-title">个人中心</h1>
+				</div>
+			</div>
+			<!-- user -->
+			<div class="user-wrap">
+				<div class="user-inner">
+					<div class="user-info-wrap">
+						<ul class="user-info-items">
+							<li class="user-info-item border-bottom">
+								<h4 class="user-info-title">用户名称:</h4>
+
+								<p class="user-info-text">admin</p>
+							</li>
+							<li class="user-info-item border-bottom">
+								<h4 class="user-info-title ">账号:</h4>
+								<p class="user-info-text">123456789</p>
+							</li>
+							<li class="user-info-item border-bottom">
+								<h4 class="user-info-title ">电话:</h4>
+								<p class="user-info-text">123456789010</p>
+							</li>
+							<li class="user-info-item border-bottom">
+								<h4 class="user-info-title ">收货地址:</h4>
+								<p class="user-info-text">银河系，地球村</p>
+							</li>
+							<li class="user-info-item border-bottom">
+								<h4 class="user-info-title ">Email:</h4>
+								<p class="user-info-text">molvqingtai@gmail.com</p>
+							</li>
+							<li class="user-info-item border-bottom">
+								<h4 class="user-info-title ">登录密码:</h4>
+								<input class="user-info-text" value="password123" type="password" readonly>
+								<button class="user-info-button" type="button" name="button">修改</button>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!-- user end -->
+		</div>
+	</main>
+	<!-- main end -->
+	<!-- footer -->
+	<footer>
+		<div class="footer-inner">
+			<div class="footer-share-wrap">
+				<div class="footer-share-inner">
+					<ul class="footer-share-items">
+						<li class="footer-share-item">
+							<a href="#">
+
+								<img class="footer-share-icon lazy" data-original="./images/facebook-icon.png" alt="">
+							</a>
+
+						</li>
+						<li class="footer-share-item">
+							<a href="#">
+
+								<img class="footer-share-icon lazy" data-original="./images/google-icon.png" alt="">
+							</a>
+
+						</li>
+						<li class="footer-share-item">
+							<a href="#">
+
+								<img class="footer-share-icon lazy" data-original="./images/linkedin-icon.png" alt="">
+							</a>
+
+						</li>
+						<li class="footer-share-item">
+							<a href="#">
+
+								<img class="footer-share-icon lazy" data-original="./images/wordpress-icon.png" alt="">
+							</a>
+
+						</li>
+					</ul>
+				</div>
+
+			</div>
+			<div class="footer-content-wrap">
+				<div class="footer-content-inner">
+
+					<div class="footer-logo-wrap">
+						<img class="footer-logo lazy" data-original="./images/logo-max.png" alt="">
+					</div>
+					<p class="footer-content-text">FDA appraved since 2000. </p>
+					<p class="footer-content-text">A safe and effective non-surglcal option for ending earty pregnancy</p>
+
+					<p class="footer-content-copyright border-top">-©2018. All rights reserved.does not provide diagnosis or treatment.</p>
+					<ul class="footer-content-partner">
+						<li class="footer-content-partner-item">
+							<a href="#">
+								<img class="footer-content-partner-img  lazy" data-original="./images/partner-01.png" alt="">
+							</a>
+						</li>
+						<li class="footer-content-partner-item">
+							<a href="#">
+								<img class="footer-content-partner-img  lazy" data-original="./images/partner-02.png" alt="">
+							</a>
+						</li>
+						<li class="footer-content-partner-item">
+							<a href="#">
+								<img class="footer-content-partner-img  lazy" data-original="./images/partner-03.png" alt="">
+							</a>
+						</li>
+						<li class="footer-content-partner-item">
+							<a href="#">
+								<img class="footer-content-partner-img  lazy" data-original="./images/partner-04.png" alt="">
+							</a>
+						</li>
+					</ul>
+
+				</div>
+
+
+			</div>
+		</div>
+	</footer>
+		<!-- footer end -->
+	<div id="pop">
+		<form class="" id="form" action="#" method="post" autocomplete="off">
+			<i id="close">×</i>
+			<h3>修改密码</h3>
+			<input type="text" name="passworld" value="" placeholder="原密码">
+			<input type="text" name="newpassworld" value="" placeholder="新密码">
+			<input type="text" name="renewpassworld" value="" placeholder="确认新密码">
+			<button type="submit" name="button">提交</button>
+		</form>
+	</div>
+
+	<script type="text/javascript">
+		$(function(){
+			$('.user-info-button').click(function(){
+				$('#pop').show();
+				$("body").css("overflow","hidden");
+			})
+			$('#close').click(function(){
+				$('#pop').hide();
+				$("body").css("overflow","auto");
+			})
+		})
+		$(function() {
+		    $(".header-menu").on("touchstart", function() {
+		        var activeEl = $(".header-logo,.header-menu-line,.header-nav-wrap,.header-nav-item");
+		        console.log($('.header-logo').hasClass("active"));
+		        if (!activeEl.hasClass("active")) {
+		            console.log(1);
+		            activeEl.addClass("active");
+		            $("html").css({
+		                "height": "100%",
+		                "overflow": "hidden"
+		            });
+		        } else {
+		            console.log(2);
+		            activeEl.removeClass("active");
+		            $("html").css({
+		                "height": "auto",
+		                "overflow": "auto"
+		            });
+		        }
+		    })
+		})
+	</script>
+</body>
+
+</html>

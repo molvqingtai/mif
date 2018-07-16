@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="zh" dir="ltr">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	<title>订单列表</title>
+
+	<link href="https://cdn.bootcss.com/normalize/8.0.0/normalize.min.css" rel="stylesheet">
+	<link href="https://cdn.bootcss.com/Swiper/4.3.0/css/swiper.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="./css/reset.css">
+	<link rel="stylesheet" href="./css/border.css">
+	<link rel="stylesheet" href="./css/style.css">
+	<link rel="stylesheet" media="(max-width:1024px)" href="./css/mediaqueries.css">
+	<link rel="stylesheet" href="./css/jquery.cxcalendar.css">
+
+	<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdn.bootcss.com/Swiper/4.2.6/js/swiper.min.js"></script>
+	<script src="https://cdn.bootcss.com/jquery_lazyload/1.9.7/jquery.lazyload.min.js"></script>
+	<script src="./js/jquery.cxcalendar.min.js"></script>
+	<script src="./js/main.js" charset="utf-8"></script>
+</head>
+
+<body>
+	<!-- top-bar -->
+	<div class="top-bar">
+		<div class="top-bar-inner">
+			<div class="top-bar-left">
+				<p class="top-bar-title">KaKaoTalk ID:Mif99</p>
+			</div>
+			<div class="top-bar-right">
+				<a class="top-bar-link" href="">留言板</a>
+				<a class="top-bar-link" href="">个人中心</a>
+				<a class="top-bar-link" href="">LOGIN</a>
+				<a class="top-bar-link" href="">JQIN</a>
+			</div>
+
+		</div>
+	</div>
+	<!-- top-bar end -->
+	<!-- header -->
+	<header>
+		<div class="header-inner">
+
+			<div class="header-logo-wrap">
+				<img class="header-logo" src="./images/logo.png" alt="logo">
+				<!-- menu button-->
+				<div class="header-menu">
+					<span class="header-menu-line"></span>
+				</div>
+				<!-- menu button end -->
+			</div>
+			<!-- nav -->
+			<div class="header-nav-wrap">
+				<ul class="header-nav">
+					<li class="header-nav-item"><a class="header-nav-link active" href="#">首页</a> </li>
+					<li class="header-nav-item"><a class="header-nav-link" href="#">产品介绍</a> </li>
+					<li class="header-nav-item"><a class="header-nav-link" href="#">妊娠周期</a> </li>
+					<li class="header-nav-item"><a class="header-nav-link" href="#">快递方式</a> </li>
+					<li class="header-nav-item"><a class="header-nav-link" href="#">联系我们</a> </li>
+				</ul>
+			</div>
+			<!-- nav end -->
+		</div>
+	</header>
+	<!-- header end -->
+	<!-- main -->
+	<main>
+		<div class="main-inner">
+			<div class="banner-wrap">
+				<div class="bnnner-inner">
+					<h1 class="banner-title">订单列表</h1>
+				</div>
+			</div>
+			<!-- user -->
+			<div class="user-wrap">
+				<div class="user-inner">
+					<div class="user-nav-wrap">
+						<span class="user-nav-title">订单列表</span>
+						<ul class="user-nav-items border">
+							<li class="user-nav-item border-bottom active">
+								<a href="user-order.html">订单列表</a>
+
+							</li>
+							<li class="user-nav-item border-bottom">
+								<a href="user-info.html">个人信息</a>
+
+							</li>
+						</ul>
+					</div>
+
+						<div class="user-order-wrap">
+							<div class="user-order-header">
+								<h3 class="user-order-title">订单列表</h3>
+							</div>
+							<div class="user-order-items">
+								<li class="user-order-item border-top">
+									<img class="user-order-img lazy" data-original="./images/product-02.png" alt="">
+									<div class="user-order-info">
+										<h1 class="user-order-text">미프진 7주전</h1>
+										<p class="user-order-price">375,000원</p>
+										<a class="user-order-status">待付款</a>
+									</div>
+								</li>
+								<li class="user-order-item border-top">
+									<img class="user-order-img lazy" data-original="./images/product-02.png" alt="">
+									<div class="user-order-info">
+										<h1 class="user-order-text">미프진 7주전</h1>
+										<p class="user-order-price">375,000원</p>
+										<a class="user-order-status">待收货</a>
+									</div>
+								</li>
+								<li class="user-order-item border-topbottom">
+									<img class="user-order-img lazy" data-original="./images/product-02.png" alt="">
+									<div class="user-order-info">
+										<h1 class="user-order-text">미프진 7주전</h1>
+										<p class="user-order-price">375,000원</p>
+										<a class="user-order-status">已完成</a>
+									</div>
+								</li>
+							</div>
+						</div>
+
+
+
+				</div>
+			</div>
+			<!-- user end -->
+		</div>
+	</main>
+	<!-- main end -->
+	<!-- footer -->
+	<footer>
+		<div class="footer-inner">
+			<div class="footer-share-wrap">
+				<div class="footer-share-inner">
+					<ul class="footer-share-items">
+						<li class="footer-share-item">
+							<a href="#">
+
+								<img class="footer-share-icon lazy" data-original="./images/facebook-icon.png" alt="">
+							</a>
+
+						</li>
+						<li class="footer-share-item">
+							<a href="#">
+
+								<img class="footer-share-icon lazy" data-original="./images/google-icon.png" alt="">
+							</a>
+
+						</li>
+						<li class="footer-share-item">
+							<a href="#">
+
+								<img class="footer-share-icon lazy" data-original="./images/linkedin-icon.png" alt="">
+							</a>
+
+						</li>
+						<li class="footer-share-item">
+							<a href="#">
+
+								<img class="footer-share-icon lazy" data-original="./images/wordpress-icon.png" alt="">
+							</a>
+
+						</li>
+					</ul>
+				</div>
+
+			</div>
+			<div class="footer-content-wrap">
+				<div class="footer-content-inner">
+
+					<div class="footer-logo-wrap">
+						<img class="footer-logo lazy" data-original="./images/logo-max.png" alt="">
+					</div>
+					<p class="footer-content-text">FDA appraved since 2000. </p>
+					<p class="footer-content-text">A safe and effective non-surglcal option for ending earty pregnancy</p>
+
+					<p class="footer-content-copyright border-top">-©2018. All rights reserved.does not provide diagnosis or treatment.</p>
+					<ul class="footer-content-partner">
+						<li class="footer-content-partner-item">
+							<a href="#">
+								<img class="footer-content-partner-img  lazy" data-original="./images/partner-01.png" alt="">
+							</a>
+						</li>
+						<li class="footer-content-partner-item">
+							<a href="#">
+								<img class="footer-content-partner-img  lazy" data-original="./images/partner-02.png" alt="">
+							</a>
+						</li>
+						<li class="footer-content-partner-item">
+							<a href="#">
+								<img class="footer-content-partner-img  lazy" data-original="./images/partner-03.png" alt="">
+							</a>
+						</li>
+						<li class="footer-content-partner-item">
+							<a href="#">
+								<img class="footer-content-partner-img  lazy" data-original="./images/partner-04.png" alt="">
+							</a>
+						</li>
+					</ul>
+
+				</div>
+
+
+			</div>
+		</div>
+	</footer>
+	<!-- footer end -->
+</body>
+
+</html>

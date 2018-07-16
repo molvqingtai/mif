@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="zh" dir="ltr">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	<title>产品</title>
+
+	<link href="https://cdn.bootcss.com/normalize/8.0.0/normalize.min.css" rel="stylesheet">
+	<link href="https://cdn.bootcss.com/Swiper/4.3.0/css/swiper.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="./css/reset.css">
+	<link rel="stylesheet" href="./css/border.css">
+	<link rel="stylesheet" href="./css/style.css">
+	<link rel="stylesheet" media="(max-width:1024px)" href="./css/mediaqueries.css">
+	<link rel="stylesheet" href="./css/jquery.cxcalendar.css">
+
+	<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdn.bootcss.com/Swiper/4.2.6/js/swiper.min.js"></script>
+	<script src="https://cdn.bootcss.com/jquery_lazyload/1.9.7/jquery.lazyload.min.js"></script>
+	<script src="./js/jquery.cxcalendar.min.js"></script>
+	<script src="./js/validator.min.js"></script>
+	<script src="./js/main.js" charset="utf-8"></script>
+	<style media="screen">
+		@media (min-width:1024px) {
+			.top-bar,
+			header {
+				display: none;
+			}
+		}
+	</style>
+</head>
+
+<body>
+	<!-- top-bar -->
+	<div class="top-bar">
+		<div class="top-bar-inner">
+			<div class="top-bar-left">
+				<p class="top-bar-title">KaKaoTalk ID:Mif99</p>
+			</div>
+			<div class="top-bar-right">
+				<a class="top-bar-link" href="">留言板</a>
+				<a class="top-bar-link" href="">个人中心</a>
+				<a class="top-bar-link" href="">LOGIN</a>
+				<a class="top-bar-link" href="">JQIN</a>
+			</div>
+
+		</div>
+	</div>
+	<!-- top-bar end -->
+	<!-- header -->
+	<header>
+		<div class="header-inner">
+
+			<div class="header-logo-wrap">
+				<img class="header-logo" src="./images/logo.png" alt="logo">
+				<!-- menu button-->
+				<div class="header-menu">
+					<span class="header-menu-line"></span>
+				</div>
+				<!-- menu button end -->
+			</div>
+			<!-- nav -->
+			<div class="header-nav-wrap">
+				<ul class="header-nav">
+					<li class="header-nav-item"><a class="header-nav-link active" href="#">首页</a> </li>
+					<li class="header-nav-item"><a class="header-nav-link" href="#">产品介绍</a> </li>
+					<li class="header-nav-item"><a class="header-nav-link" href="#">妊娠周期</a> </li>
+					<li class="header-nav-item"><a class="header-nav-link" href="#">快递方式</a> </li>
+					<li class="header-nav-item"><a class="header-nav-link" href="#">联系我们</a> </li>
+				</ul>
+			</div>
+			<!-- nav end -->
+		</div>
+	</header>
+	<!-- header end -->
+	<!-- main -->
+	<main>
+		<div class="main-inner">
+			<div class="buy-wrap">
+				<div class="buy-left">
+					<div class="buy-logo-wrap border-bottom">
+						<img class="buy-logo-img lazy" data-original="./images/logo.png" alt="">
+						<div class="buy-logo-position">
+							<a class="buy-logo-position-link" href="#">产品</a> > 购买
+						</div>
+					</div>
+					<div class="buy-form-wrap">
+
+						<form id="form" action="#" method="post" autocomplete="off">
+							<h3 class="buy-form-title">联系信息</h3>
+							<label class="buy-form-label border">
+							<input class="buy-form-input"type="text" name="email" value="" placeholder="Email">
+							</label>
+							<h3 class="buy-form-title">邮寄地址</h3>
+							<label class="buy-form-label border">
+								<input class="buy-form-input"type="text" name="name" value="" placeholder="姓名">
+							</label>
+							<label class="buy-form-label border">
+								<input class="buy-form-input"type="text" name="address" value="" placeholder="地址">
+							</label>
+							<label class="buy-form-label border">
+									<input class="buy-form-input"type="text" name="tel" value="" placeholder="电话">
+							</label>
+
+
+							<div class="buy-form-button-wrap">
+								<a class="buy-form-back" href="#">
+									< 返回商品页</a>
+										<button class="buy-form-button" type="submit" name="button">提交订单</button>
+							</div>
+						</form>
+
+					</div>
+				</div>
+				<div class="buy-right">
+					<div class="buy-order-wrap">
+						<div class="buy-order-button-wrap">
+							<button class="buy-order-button" type="button" name="button">隐藏订单</button>
+							<span class="buy-order-cart-total">375,000원</span>
+						</div>
+
+						<ul class="buy-order-items">
+							<li class="buy-order-item border-bottom">
+								<div class="buy-order-img-wrap border">
+									<number class="buy-order-number">5</number>
+									<img class="buy-order-img lazy border" data-original="./images/product-02.png" alt="">
+								</div>
+
+								<div class="buy-order-info">
+									<h3 class="buy-order-title">미프진 7주전</h3>
+									<number class="buy-order-price">375,000원</number>
+								</div>
+							</li>
+							<div class="buy-order-count border-bottom">
+								<div class="buy-order-count-inner ">
+									<span>小计</span> <span>375,000원</span>
+								</div>
+								<div class="buy-order-count-inner">
+									<span>运输</span> <span>自由</span>
+								</div>
+							</div>
+
+						</ul>
+						<div class="buy-order-total">
+							<span>总计</span> <span>375,000원</span>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+	<!-- main end -->
+	<!-- footer -->
+	<footer>
+		<div class="footer-inner">
+			<div class="footer-share-wrap">
+				<div class="footer-share-inner">
+					<ul class="footer-share-items">
+						<li class="footer-share-item">
+							<a href="#">
+
+								<img class="footer-share-icon lazy" data-original="./images/facebook-icon.png" alt="">
+							</a>
+
+						</li>
+						<li class="footer-share-item">
+							<a href="#">
+
+								<img class="footer-share-icon lazy" data-original="./images/google-icon.png" alt="">
+							</a>
+
+						</li>
+						<li class="footer-share-item">
+							<a href="#">
+
+								<img class="footer-share-icon lazy" data-original="./images/linkedin-icon.png" alt="">
+							</a>
+
+						</li>
+						<li class="footer-share-item">
+							<a href="#">
+
+								<img class="footer-share-icon lazy" data-original="./images/wordpress-icon.png" alt="">
+							</a>
+
+						</li>
+					</ul>
+				</div>
+
+			</div>
+			<div class="footer-content-wrap">
+				<div class="footer-content-inner">
+
+					<div class="footer-logo-wrap">
+						<img class="footer-logo lazy" data-original="./images/logo-max.png" alt="">
+					</div>
+					<p class="footer-content-text">FDA appraved since 2000. </p>
+					<p class="footer-content-text">A safe and effective non-surglcal option for ending earty pregnancy</p>
+
+					<p class="footer-content-copyright border-top">-©2018. All rights reserved.does not provide diagnosis or treatment.</p>
+					<ul class="footer-content-partner">
+						<li class="footer-content-partner-item">
+							<a href="#">
+								<img class="footer-content-partner-img  lazy" data-original="./images/partner-01.png" alt="">
+							</a>
+						</li>
+						<li class="footer-content-partner-item">
+							<a href="#">
+								<img class="footer-content-partner-img  lazy" data-original="./images/partner-02.png" alt="">
+							</a>
+						</li>
+						<li class="footer-content-partner-item">
+							<a href="#">
+								<img class="footer-content-partner-img  lazy" data-original="./images/partner-03.png" alt="">
+							</a>
+						</li>
+						<li class="footer-content-partner-item">
+							<a href="#">
+								<img class="footer-content-partner-img  lazy" data-original="./images/partner-04.png" alt="">
+							</a>
+						</li>
+					</ul>
+
+				</div>
+
+
+			</div>
+		</div>
+	</footer>
+	<!-- footer end -->
+</body>
+
+</html>
